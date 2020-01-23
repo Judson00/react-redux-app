@@ -19,7 +19,7 @@ export const reducer = (state = initialState, action) => {
       return {
         ...state,
         isLoading: false,
-        activity: action.payload
+        price: action.payload
       }
     default:
       console.log(state)
