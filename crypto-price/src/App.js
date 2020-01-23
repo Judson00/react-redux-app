@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.css';
+import Price from './components/Price';
 
 function App() {
   return (
     <div className="App">
-      <h1>Crypto Price</h1>
+      <Price Crypto />
     </div>
   );
 }
