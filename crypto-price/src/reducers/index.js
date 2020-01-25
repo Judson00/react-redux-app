@@ -1,6 +1,9 @@
 // Index of reducer
 
-import { FETCHING_PRICE_START, FETCHING_PRICE_SUCCESS } from '../actions';
+import { 
+  FETCHING_PRICE_START, 
+  FETCHING_PRICE_SUCCESS,
+} from '../actions';
 
 const initialState = {
   isLoading: false,

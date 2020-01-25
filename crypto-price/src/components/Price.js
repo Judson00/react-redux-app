@@ -23,7 +23,15 @@ const Price = props => {
       />
       )}
       <button onClick={props.fetchPrice}>Get Price</button>
-      {props.price && !props.loading && <h2>{`$ ${props.price.ticker.price}`}</h2>}
+      {
+        props.price 
+          && 
+        !props.loading 
+          && 
+        <div>
+          <h2>{`1 ${props.price.ticker.base} = $ ${props.price.ticker.price}`}</h2>
+        </div>
+      }
 
     </div>
   )
