@@ -1,7 +1,7 @@
 import React from 'react';
-import './App.css';
-import Price from './components/Price';
-import NewCoin from './components/Input';
+import '../css/App.css';
+import Price from './Price';
+import NewCoin from './Input';
 
 function App() {
   return (

@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { connect } from 'react-redux';
+import { Button } from 'reactstrap';
 
 import { fetchPrice } from '../actions';
 import Loader from 'react-loader-spinner';
@@ -22,14 +23,14 @@ const Price = props => {
         timeout={3000} //3 secs
       />
       )}
-      <button onClick={props.fetchPrice}>Get Price of BTC</button>
+      <Button color="primary" onClick={props.fetchPrice}>Get Price of BTC</Button>
       {
         props.price 
           && 
         !props.loading 
           && 
         <div>
-          <h2>{`1 ${props.price.ticker.base} = $ ${props.price.ticker.price}`}</h2>
+          <h2>{`${props.price.ticker.base} = $ ${props.price.ticker.price}`}</h2>
         </div>
       }
 
