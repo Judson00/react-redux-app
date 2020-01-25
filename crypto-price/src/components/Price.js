@@ -22,7 +22,7 @@ const Price = props => {
         timeout={3000} //3 secs
       />
       )}
-      <button onClick={props.fetchPrice}>Get Price</button>
+      <button onClick={props.fetchPrice}>Get Price of BTC</button>
       {
         props.price 
           && 

@@ -29,6 +29,7 @@ const NewCoin = () => {
       <input
         type="text"
         value={coin.coinText}
+        placeholder="Enter Ticker Symbol"
         onChange={handleChanges}
       />
     <button onClick={fetchPrice}>Get Price</button>
